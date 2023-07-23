@@ -41,4 +41,5 @@ Alternatively, you can also use the command line to set up Ciscobar with the fol
  - [neslib.xml](https://github.com/neslib/Neslib.Xml)
  - [SVGIconImageList](https://github.com/EtheaDev/SVGIconImageList)
  - [Inno Setup](https://jrsoftware.org/isinfo.php)
+ - [upx](https://upx.github.io/)
 
