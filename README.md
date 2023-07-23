@@ -9,6 +9,11 @@ Ciscobar is a user-friendly and efficient tool designed to streamline the proces
 ![enter image description here](https://img.shields.io/static/v1?label=Windows&message=available&color=silver&style=for-the-badge&logo=windows&logoColor=white)
 ![enter image description here](https://img.shields.io/static/v1?label=Mac%20OS&message=soon&color=silver&style=for-the-badge&logo=apple&logoColor=white)
 ![enter image description here](https://img.shields.io/static/v1?label=Linux&message=soon&color=silver&style=for-the-badge&logo=linux&logoColor=white)
+### Supported languages
+- English
+- Spanish
+- French
+> Explore the src/locales directory to contribute to translations in your language or help correct any typos!
 ### Get started
 To begin using Ciscobar, you need to provide three essential parameters either through the user interface or the command line
 #### Via User Interface:
