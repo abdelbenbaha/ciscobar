@@ -15,11 +15,11 @@ To begin using Ciscobar, you need to provide three essential parameters either t
 
 ![ciscobar](https://github.com/abdelbenbaha/ciscobar/assets/45561892/e8213100-062b-469e-b123-e05bc784ff23)
 
-1.  CUCM Base URL: The base URL for connecting to the Cisco Unified Communications Manager (CUCM) should be provided in the following format: `https://{cucm_hostname}`.
+1.  **CUCM Base URL:** The base URL for connecting to the Cisco Unified Communications Manager (CUCM) should be provided in the following format: `https://{cucm_hostname}`.
     
-2.  Username: You need to enter a valid username to authenticate with CUCM and access its resources.
+2.  **Username:** You need to enter a valid username to authenticate with CUCM and access its resources.
     
-3.  Password: The corresponding password for the provided username is required for secure authentication.
+3.  **Password:** The corresponding password for the provided username is required for secure authentication.
 
 #### Via Command Line:
 
