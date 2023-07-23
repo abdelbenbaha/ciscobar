@@ -34,6 +34,8 @@ Source: "..\src\bin\ciscobar.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\src\bin\sk4d.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\src\locales\*"; DestDir: "{app}\locales"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
+[Registry]
+Root: HKCU; Subkey: "SOFTWARE\Microsoft\Windows\CurrentVersion\Run"; ValueType: string; ValueName: "ciscobar"; ValueData: """{app}\ciscobar.exe"""; Flags: uninsdeletevalue
 
 [Icons]
 Name: "{autoprograms}\ciscobar"; Filename: "{app}\ciscobar.exe"
