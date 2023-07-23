@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locale code="es" dir="ltr">
+    <emptyFields>La URL base de CUCM, el nombre de usuario y la contraseña son campos obligatorios</emptyFields>
+    <invalidUrl>La URL base de CUCM debe ser válida</invalidUrl>
+    <unknownError>Algo salió mal.Por favor, contacta con el soporte para obtener más información</unknownError>
+    <invalidCredentials>El nombre de usuario o la contraseña que has ingresado no es correcto.Por favor, inténtalo de nuevo</invalidCredentials>
+    <invalidCucm>La URL base que has ingresado no corresponde a la URL base de CUCM.Por favor, inténtalo de nuevo</invalidCucm>
+    <checkNetwork>Verifica tu conexión de red e intenta de nuevo</checkNetwork>
+    <searchPrompt>Busca un nombre o ingresa un número de teléfono</searchPrompt>
+    <pressEsc>pulsa ESC para ocultar</pressEsc>
+    <btnCancel>cancelar</btnCancel>
+    <btnSave>guardar</btnSave>
+    <johnDoe>Juan Pérez</johnDoe>
+    <cucmHint>URL del Administrador de Comunicaciones Unificadas de Cisco</cucmHint>
+    <usernameHint>Usuario dedicado para los servicios de CUCM</usernameHint>
+    <slideFirstTitle>Búsqueda sin esfuerzo</slideFirstTitle>
+    <slideSecondTitle>Llamada rápida</slideSecondTitle>
+    <slideThirdTitle>Acceso fácil</slideThirdTitle>
+    <slideFourthTitle>Datos seguros</slideFourthTitle>
+    <slideFirstDescription>Encuentra rápidamente y fácilmente información de contacto sin complicaciones ni esfuerzos adicionales.</slideFirstDescription>
+    <slideSecondDescription>Inicia y finaliza una llamada telefónica sin esfuerzo con solo pulsar un botón.</slideSecondDescription>
+    <slideThirdDescription>Conexión simplificada a los servicios del Administrador de Comunicaciones Unificadas de Cisco con un solo clic.</slideThirdDescription>
+    <slideFourthDescription>Tus datos están protegidos mediante credenciales de inicio de sesión, asegurando que solo tú puedas acceder a ellos.</slideFourthDescription>
+</locale>
