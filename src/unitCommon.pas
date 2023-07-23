@@ -48,8 +48,8 @@ type
    end;
 
 const
-  appName='Ciscobar';
-  settingsFilename='settings.xml';
+  appName='Ciscobar';//application name
+  settingsFilename='settings.xml';//settings file
 
   axlService='axl';
   webDialerService='webdialer/services/WebdialerSoapService70';

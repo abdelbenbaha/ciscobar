@@ -50,7 +50,7 @@ implementation
 
 {$R *.fmx}
 
-uses unitCommon, unitFirst,Neslib.Xml{$ifdef MSWINDOWS},Fmx.Platform.Win, Winapi.ShellAPI{$endif};
+uses unitCommon, unitFirst,Neslib.Xml{$ifdef MSWINDOWS},Fmx.Platform.Win, Winapi.Windows{$endif};
 
 const colorPalette:array[0..8] of TAlphaColor=($ffE91E63,$ffC21858,$ff9C2780,$ff572780,$ff272AB0,$ff276880,$ff57AC0C,$ff570CBE,$ff60C689);
 
@@ -269,6 +269,15 @@ end;
 procedure TfrmSearch.FormCreate(Sender: TObject);
 var status,cServer,cUsername,cPassword:string;
 begin
+{$ifdef MSWINDOWS}
+// source:https://stackoverflow.com/questions/53765725/hide-taskbar-button-in-fmx-on-windows
+ var hAppWnd:HWND:=ApplicationHWND();
+     ShowWindow(hAppWnd, SW_HIDE);
+ var ExStyle:LONG_PTR:=GetWindowLongPtr(hAppWnd, GWL_EXSTYLE);
+     SetWindowLongPtr(hAppWnd, GWL_EXSTYLE, (ExStyle and not WS_EX_APPWINDOW) or WS_EX_TOOLWINDOW);
+ CreateMutex(nil,true,appName);
+ if GetLastError=$B7 then Application.Terminate;
+{$endif}
   FindCmdLineSwitch('s',cserver,true,[clstValueAppended]);
   FindCmdLineSwitch('u',cUsername,true,[clstValueAppended]);
   FindCmdLineSwitch('p',cPassword,true,[clstValueAppended]);

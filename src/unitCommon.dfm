@@ -21,7 +21,6 @@ object dmCommon: TdmCommon
       item
         MultiResBitmap = <
           item
-            Size = 18
           end>
         IconName = 'ic_fluent_dismiss_24_regular'
         SVGText = 
@@ -38,7 +37,6 @@ object dmCommon: TdmCommon
       item
         MultiResBitmap = <
           item
-            Size = 20
           end>
         IconName = 'ic_fluent_person_24_filled'
         SVGText = 
@@ -54,7 +52,6 @@ object dmCommon: TdmCommon
       item
         MultiResBitmap = <
           item
-            Size = 22
           end>
         IconName = 'ic_fluent_video_person_call_24_filled'
         SVGText = 
@@ -81,7 +78,6 @@ object dmCommon: TdmCommon
       item
         MultiResBitmap = <
           item
-            Size = 20
           end>
         IconName = 'ic_fluent_globe_24_regular'
         SVGText = 
@@ -109,7 +105,6 @@ object dmCommon: TdmCommon
       item
         MultiResBitmap = <
           item
-            Size = 20
           end>
         IconName = 'ic_fluent_lock_closed_24_filled'
         SVGText = 
@@ -125,7 +120,6 @@ object dmCommon: TdmCommon
       item
         MultiResBitmap = <
           item
-            Size = 20
           end>
         IconName = 'ic_fluent_info_24_regular'
         SVGText = 
@@ -158,7 +152,6 @@ object dmCommon: TdmCommon
       item
         MultiResBitmap = <
           item
-            Size = 20
           end>
         IconName = 'ic_fluent_error_circle_24_filled'
         SVGText = 
@@ -220,48 +213,48 @@ object dmCommon: TdmCommon
         Layers = <
           item
             Name = 'ic_fluent_dismiss_24_regular'
-            SourceRect.Right = 18.000000000000000000
-            SourceRect.Bottom = 18.000000000000000000
+            SourceRect.Right = 32.000000000000000000
+            SourceRect.Bottom = 32.000000000000000000
           end>
       end
       item
         Layers = <
           item
             Name = 'ic_fluent_person_24_filled'
-            SourceRect.Right = 20.000000000000000000
-            SourceRect.Bottom = 20.000000000000000000
+            SourceRect.Right = 32.000000000000000000
+            SourceRect.Bottom = 32.000000000000000000
           end>
       end
       item
         Layers = <
           item
             Name = 'ic_fluent_video_person_call_24_filled'
-            SourceRect.Right = 22.000000000000000000
-            SourceRect.Bottom = 22.000000000000000000
+            SourceRect.Right = 32.000000000000000000
+            SourceRect.Bottom = 32.000000000000000000
           end>
       end
       item
         Layers = <
           item
             Name = 'ic_fluent_globe_24_regular'
-            SourceRect.Right = 20.000000000000000000
-            SourceRect.Bottom = 20.000000000000000000
+            SourceRect.Right = 32.000000000000000000
+            SourceRect.Bottom = 32.000000000000000000
           end>
       end
       item
         Layers = <
           item
             Name = 'ic_fluent_lock_closed_24_filled'
-            SourceRect.Right = 20.000000000000000000
-            SourceRect.Bottom = 20.000000000000000000
+            SourceRect.Right = 32.000000000000000000
+            SourceRect.Bottom = 32.000000000000000000
           end>
       end
       item
         Layers = <
           item
             Name = 'ic_fluent_info_24_regular'
-            SourceRect.Right = 20.000000000000000000
-            SourceRect.Bottom = 20.000000000000000000
+            SourceRect.Right = 32.000000000000000000
+            SourceRect.Bottom = 32.000000000000000000
           end>
       end
       item
@@ -276,8 +269,8 @@ object dmCommon: TdmCommon
         Layers = <
           item
             Name = 'ic_fluent_error_circle_24_filled'
-            SourceRect.Right = 20.000000000000000000
-            SourceRect.Bottom = 20.000000000000000000
+            SourceRect.Right = 32.000000000000000000
+            SourceRect.Bottom = 32.000000000000000000
           end>
       end
       item
