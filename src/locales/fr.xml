@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locale code="fr" dir="ltr">
+    <emptyFields>Les champs d'URL de base de CUCM, de nom d'utilisateur et de mot de passe sont tous requis</emptyFields>
+    <invalidUrl>L'URL de base de CUCM doit être valide</invalidUrl>
+    <unknownError>Une erreur s'est produite.Veuillez contacter votre support pour plus d'informations</unknownError>
+    <invalidCredentials>Le nom d'utilisateur ou le mot de passe que vous avez saisi est incorrect.Veuillez réessayer</invalidCredentials>
+    <invalidCucm>L'URL de base que vous avez saisie ne correspond pas à l'URL de base de CUCM.Veuillez réessayer</invalidCucm>
+    <checkNetwork>Vérifiez votre connexion réseau et réessayez</checkNetwork>
+    <searchPrompt>Recherchez un nom ou saisissez un numéro de téléphone</searchPrompt>
+	<pressEsc>Appuyer sur esc pour masquer</pressEsc>
+    <btnCancel>annuler</btnCancel>
+    <btnSave>enregistrer</btnSave>
+    <johnDoe>Monsieur Dupont</johnDoe>
+    <cucmHint>URL du gestionnaire de communications unifiées Cisco</cucmHint>
+    <usernameHint>Utilisateur dédié aux services CUCM</usernameHint>
+    <slideFirstTitle>Recherche sans effort</slideFirstTitle>
+    <slideSecondTitle>Appel rapide</slideSecondTitle>
+    <slideThirdTitle>Accès facile</slideThirdTitle>
+    <slideFourthTitle>Données sécurisées</slideFourthTitle>
+    <slideFirstDescription>Recherchez rapidement et facilement les coordonnées sans aucun tracas ni effort supplémentaire.</slideFirstDescription>
+    <slideSecondDescription>Initiez et mettez fin à un appel téléphonique en toute simplicité en appuyant simplement sur un bouton.</slideSecondDescription>
+    <slideThirdDescription>Connexion simplifiée aux services du gestionnaire de communications unifiées Cisco en un clic.</slideThirdDescription>
+    <slideFourthDescription>Vos données sont protégées à l'aide de vos identifiants de connexion, garantissant que vous seul pouvez y accéder.</slideFourthDescription>
+</locale>

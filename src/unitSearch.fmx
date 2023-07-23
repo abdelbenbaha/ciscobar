@@ -1,0 +1,140 @@
+object frmSearch: TfrmSearch
+  Left = 0
+  Top = 0
+  BorderStyle = None
+  Caption = 'Cisco dialer for desktop'
+  ClientHeight = 315
+  ClientWidth = 320
+  Transparency = True
+  FormStyle = StayOnTop
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object lytSearch: TLayout
+    Align = MostTop
+    Margins.Top = 1.000000000000000000
+    Position.Y = 1.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object rectSearch: TRectangle
+      Align = Contents
+      Fill.Color = xFF24292E
+      Opacity = 0.300000011920929000
+      Size.Width = 320.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 4.000000000000000000
+      YRadius = 4.000000000000000000
+      OnMouseDown = rectSearchMouseDown
+      object edtSearch: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        StyleLookup = 'transparentedit'
+        TabOrder = 1
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.FontColor = claWhite
+        HitTest = False
+        Size.Width = 368.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = []
+        Visible = False
+        Caret.Color = claWhite
+        Caret.Width = 2
+        OnTyping = edtSearchTyping
+      end
+      object imgSearch: TGlyph
+        Align = MostLeft
+        Size.Width = 32.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        ImageIndex = 0
+        Images = dmCommon.iconsSmall
+      end
+      object animSearch: TFloatAnimation
+        Duration = 0.200000002980232200
+        Inverse = True
+        OnProcess = animSearchProcess
+        OnFinish = animSearchFinish
+        PropertyName = 'Opacity'
+        StartValue = 0.300000011920929000
+        StopValue = 0.800000011920929000
+        Trigger = 'IsMouseOver=true'
+        TriggerInverse = 'IsMouseOver=false'
+      end
+    end
+  end
+  object lytResult: TLayout
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 265.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 0
+    object rectResult: TRectangle
+      Align = Contents
+      Fill.Color = xFF2F363D
+      Opacity = 0.899999976158142100
+      Margins.Top = 5.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 260.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 4.000000000000000000
+      YRadius = 4.000000000000000000
+      OnMouseDown = rectSearchMouseDown
+      object scrList: TVertScrollBox
+        Align = Client
+        Size.Width = 320.000000000000000000
+        Size.Height = 245.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'VertScrollBox1Style1'
+        TabOrder = 0
+        ShowScrollBars = False
+        OnCalcContentBounds = scrListCalcContentBounds
+        Viewport.Width = 320.000000000000000000
+        Viewport.Height = 245.000000000000000000
+      end
+      object lytHint: TLayout
+        Align = MostBottom
+        Position.Y = 245.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 15.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object lblHint: TSkLabel
+          Align = Center
+          Size.Width = 67.000000000000000000
+          Size.Height = 12.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Style]
+          TextSettings.Font.Size = 9.000000000000000000
+          TextSettings.FontColor = claWhite
+          Words = <
+            item
+              Name = 'Item 0'
+              Text = 'press '
+            end
+            item
+              BackgroundColor = claWhite
+              FontColor = claBlack
+              Name = 'Item 1'
+              StyledSettings = [Family, Size, Style]
+              Text = 'esc'
+            end
+            item
+              Name = 'Item 2'
+              Text = ' to hide'
+            end>
+        end
+      end
+    end
+  end
+end

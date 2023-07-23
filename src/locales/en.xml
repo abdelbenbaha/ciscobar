@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locale code="en" dir="ltr">
+    <emptyFields>cucm base url, username and password fields are all required</emptyFields>
+    <invalidUrl>cucm base url must be valid</invalidUrl>
+    <unknownError>Something went wrong.&#xA;Please contact your support for further information</unknownError>
+    <invalidCredentials>The username or password you have entered is incorrect.&#xA;Please try again</invalidCredentials>
+    <invalidCucm>The base url you have entered does not correspond to the cucm base URL.&#xA;Please try again</invalidCucm>
+    <checkNetwork>Check your network connection, and try again</checkNetwork>
+    <searchPrompt>Search for a name or enter a phone number</searchPrompt>
+	<pressEsc>press esc to hide</pressEsc>
+    <btnCancel>cancel</btnCancel>
+    <btnSave>save</btnSave>
+    <johnDoe>John Doe</johnDoe>
+    <cucmHint>Cisco Unified Communications Manager URL</cucmHint>
+    <usernameHint>Dedicated user for CUCM services</usernameHint>
+    <slideFirstTitle>Effortless Search</slideFirstTitle>
+    <slideSecondTitle>Swift Call</slideSecondTitle>
+    <slideThirdTitle>Easy Access</slideThirdTitle>
+    <slideFourthTitle>Secured Data</slideFourthTitle>
+    <slideFirstDescription>Quickly and easily find contact information without any hassle or extra effort.</slideFirstDescription>
+    <slideSecondDescription>Effortlessly initiate, and end a telephone call with the mere tap of a button.</slideSecondDescription>
+    <slideThirdDescription>Simplified Connection to Cisco Unified Communications Manager services at the click of a button.</slideThirdDescription>
+    <slideFourthDescription>Your data is protected using logon credentials, ensuring that only you can access it.</slideFourthDescription>
+</locale>

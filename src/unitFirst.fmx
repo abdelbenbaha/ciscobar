@@ -1,0 +1,617 @@
+object frmFirst: TfrmFirst
+  Left = 0
+  Top = 0
+  ActiveControl = edtServer
+  BorderStyle = None
+  Caption = 'Cisco phonebook'
+  ClientHeight = 420
+  ClientWidth = 400
+  Fill.Color = claBlack
+  Fill.Kind = Solid
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object lytBar: TLayout
+    Align = MostTop
+    Size.Width = 400.000000000000000000
+    Size.Height = 27.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    TabStop = False
+    object rectBar: TRectangle
+      Align = Contents
+      Fill.Color = xFF24292E
+      Size.Width = 400.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      OnMouseDown = rectBarMouseDown
+      object rectClose: TRectangle
+        Align = MostRight
+        Fill.Color = claNull
+        Position.X = 376.000000000000000000
+        Size.Width = 24.000000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        OnClick = rectCloseClick
+        object btnClose: TGlyph
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Align = Contents
+          Size.Width = 18.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          ImageIndex = 1
+          Images = dmCommon.iconsSmall
+        end
+        object ColorAnimation1: TColorAnimation
+          Duration = 0.200000002980232200
+          Inverse = True
+          PropertyName = 'Fill.Color'
+          StartValue = claNull
+          StopValue = xFFDD0D3C
+          Trigger = 'IsMouseOver=true'
+          TriggerInverse = 'IsMouseOver=false'
+        end
+      end
+      object iconApp: TGlyph
+        Margins.Left = 3.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Margins.Right = 3.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Align = MostLeft
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 22.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        ImageIndex = 3
+        Images = dmCommon.iconsSmall
+      end
+      object lblTitle: TSkLabel
+        Align = Client
+        Size.Width = 348.000000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family]
+        TextSettings.Font.Size = 12.000000000000000000
+        TextSettings.Font.Weight = Medium
+        TextSettings.FontColor = claWhite
+        Words = <
+          item
+            Text = 'Ciscobar 1.0'
+          end>
+      end
+    end
+  end
+  object lytMain: TLayout
+    Align = Client
+    Margins.Top = 1.000000000000000000
+    Size.Width = 400.000000000000000000
+    Size.Height = 392.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object rectMain: TRectangle
+      Align = Contents
+      Fill.Color = xFF24292E
+      Size.Width = 400.000000000000000000
+      Size.Height = 392.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object lytSlider: TLayout
+        Align = Top
+        Size.Width = 400.000000000000000000
+        Size.Height = 166.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        TabStop = False
+        object lytTitle: TLayout
+          Align = Bottom
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 87.000000000000000000
+          Size.Width = 380.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object lblSlideTitle: TSkLabel
+            Align = Client
+            Size.Width = 380.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family]
+            TextSettings.Font.Weight = Bold
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Words = <
+              item
+              end>
+          end
+        end
+        object lytDescription: TLayout
+          Align = Bottom
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 117.000000000000000000
+          Size.Width = 380.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object lblSlideDescription: TSkLabel
+            Align = Client
+            Size.Width = 380.000000000000000000
+            Size.Height = 49.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family]
+            TextSettings.Font.Size = 12.000000000000000000
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Words = <
+              item
+              end>
+          end
+        end
+        object lytImage: TLayout
+          Align = Client
+          Size.Width = 400.000000000000000000
+          Size.Height = 87.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object iconSlider: TGlyph
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Align = Contents
+            Size.Width = 380.000000000000000000
+            Size.Height = 77.000000000000000000
+            Size.PlatformDefault = False
+            Images = dmCommon.iconsBig
+          end
+        end
+        object animSlider: TFloatAnimation
+          AnimationType = Out
+          Delay = 4.000000000000000000
+          Duration = 0.500000000000000000
+          OnFinish = animSliderFinish
+          PropertyName = 'Opacity'
+          StartValue = 1.000000000000000000
+          StopValue = 0.000000000000000000
+        end
+      end
+      object lytCredentials: TLayout
+        Align = Bottom
+        Position.Y = 220.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 172.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        object lytServer: TLayout
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Size.Width = 380.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object rectServer: TRectangle
+            Align = Contents
+            Fill.Color = xFF2F363D
+            Size.Width = 380.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            XRadius = 4.000000000000000000
+            YRadius = 4.000000000000000000
+            object iconServer: TGlyph
+              Margins.Left = 2.000000000000000000
+              Align = MostLeft
+              Position.X = 2.000000000000000000
+              Opacity = 0.800000011920929000
+              Size.Width = 20.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              ImageIndex = 4
+              Images = dmCommon.iconsSmall
+            end
+            object edtServer: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              StyleLookup = 'transparentedit'
+              TabOrder = 5
+              TextSettings.FontColor = claWhite
+              Margins.Left = 2.000000000000000000
+              Size.Width = 336.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = 'https://cucm:8443/'
+              StyledSettings = [Family, Size, Style]
+              OnKeyUp = edtServerKeyUp
+              OnEnter = edtServerEnter
+              OnExit = edtServerExit
+            end
+            object rectInfo1: TRectangle
+              Align = MostRight
+              Fill.Kind = None
+              Hint = 'Cisco Unified Communications Manager URL'
+              Position.X = 360.000000000000000000
+              Size.Width = 20.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object imgInfo1: TGlyph
+                Margins.Right = 3.000000000000000000
+                Align = MostRight
+                Position.X = -3.000000000000000000
+                Opacity = 0.800000011920929000
+                Size.Width = 20.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                ImageIndex = 6
+                Images = dmCommon.iconsSmall
+              end
+            end
+          end
+        end
+        object lytPassword: TLayout
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 80.000000000000000000
+          Size.Width = 380.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 7
+          object rectPassword: TRectangle
+            Align = Contents
+            Fill.Color = xFF2F363D
+            Size.Width = 380.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            XRadius = 4.000000000000000000
+            YRadius = 4.000000000000000000
+            object iconPassword: TGlyph
+              Margins.Left = 2.000000000000000000
+              Align = MostLeft
+              Position.X = 2.000000000000000000
+              Opacity = 0.800000011920929000
+              Size.Width = 20.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              ImageIndex = 5
+              Images = dmCommon.iconsSmall
+            end
+            object edtPassword: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              StyleLookup = 'transparentedit'
+              TabOrder = 9
+              Password = True
+              TextSettings.FontColor = claWhite
+              Margins.Left = 2.000000000000000000
+              Size.Width = 356.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = [Family, Size, Style]
+              OnKeyUp = edtServerKeyUp
+              OnEnter = edtServerEnter
+              OnExit = edtServerExit
+            end
+          end
+        end
+        object lytUsername: TLayout
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 40.000000000000000000
+          Size.Width = 380.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object rectUsername: TRectangle
+            Align = Contents
+            Fill.Color = xFF2F363D
+            Size.Width = 380.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            XRadius = 4.000000000000000000
+            YRadius = 4.000000000000000000
+            object iconUsername: TGlyph
+              Margins.Left = 2.000000000000000000
+              Align = MostLeft
+              Position.X = 2.000000000000000000
+              Opacity = 0.800000011920929000
+              Size.Width = 20.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              ImageIndex = 2
+              Images = dmCommon.iconsSmall
+            end
+            object edtUsername: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              StyleLookup = 'transparentedit'
+              TabOrder = 7
+              TextSettings.FontColor = claWhite
+              Margins.Left = 2.000000000000000000
+              Size.Width = 356.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = 'John Doe'
+              StyledSettings = [Family, Size, Style]
+              OnKeyUp = edtServerKeyUp
+              OnEnter = edtServerEnter
+              OnExit = edtServerExit
+            end
+          end
+          object rectInfo2: TRectangle
+            Align = MostRight
+            Fill.Kind = None
+            Hint = 'Dedicated user for CUCM services'
+            Position.X = 360.000000000000000000
+            Size.Width = 20.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object imgInfo2: TGlyph
+              Margins.Right = 3.000000000000000000
+              Align = MostRight
+              Position.X = -3.000000000000000000
+              Opacity = 0.800000011920929000
+              Size.Width = 20.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              ImageIndex = 6
+              Images = dmCommon.iconsSmall
+            end
+          end
+        end
+        object lytButtons: TLayout
+          Align = Bottom
+          Position.Y = 122.000000000000000000
+          Size.Width = 400.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 10
+          TabStop = False
+          object rectCancel: TRectangle
+            Align = Left
+            Fill.Color = claNull
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 10.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFF2F363D
+            Stroke.Thickness = 1.500000000000000000
+            XRadius = 4.000000000000000000
+            YRadius = 4.000000000000000000
+            OnClick = rectCloseClick
+            object lblCancel: TSkLabel
+              Align = Client
+              Size.Width = 80.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = [Family]
+              TextSettings.Font.Size = 12.000000000000000000
+              TextSettings.Font.Weight = Medium
+              TextSettings.FontColor = claWhite
+              TextSettings.HorzAlign = Center
+              Words = <
+                item
+                  Text = 'cancel'
+                end>
+            end
+            object animCancel: TColorAnimation
+              Duration = 0.200000002980232200
+              Inverse = True
+              PropertyName = 'Stroke.Color'
+              StartValue = xFF2F363D
+              StopValue = claWhite
+              Trigger = 'IsMouseOver=true'
+              TriggerInverse = 'IsMouseOver=false'
+            end
+          end
+          object rectSave: TRectangle
+            Align = MostRight
+            Fill.Color = xFF7F44C4
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = 310.000000000000000000
+            Position.Y = 10.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            XRadius = 4.000000000000000000
+            YRadius = 4.000000000000000000
+            OnClick = rectSaveClick
+            object lblSave: TSkLabel
+              Align = Client
+              Size.Width = 80.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = [Family]
+              TextSettings.Font.Size = 12.000000000000000000
+              TextSettings.Font.Weight = Medium
+              TextSettings.FontColor = claWhite
+              TextSettings.HorzAlign = Center
+              Words = <
+                item
+                  Text = 'save'
+                end>
+            end
+            object GlowEffect1: TGlowEffect
+              Softness = 0.300000011920929000
+              GlowColor = xFF7F44C4
+              Opacity = 0.800000011920929000
+              Trigger = 'IsMouseOver=true'
+              Enabled = False
+            end
+            object imgLoading: TSkAnimatedImage
+              Align = Center
+              Size.Width = 42.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              Visible = False
+              Data = {
+                7B2276223A22352E352E30222C226672223A33302C226970223A302C226F7022
+                3A36302C2277223A3230302C2268223A3230302C226E6D223A22436F6D702031
+                222C22646464223A302C22617373657473223A5B5D2C226C6179657273223A5B
+                7B22646464223A302C22696E64223A312C227479223A342C226E6D223A225368
+                617065204C617965722032222C227372223A312C226B73223A7B226F223A7B22
+                61223A302C226B223A38302C226978223A31317D2C2272223A7B2261223A312C
+                226B223A5B7B2269223A7B2278223A5B302E3532365D2C2279223A5B302E3637
+                335D7D2C226F223A7B2278223A5B302E3437325D2C2279223A5B302E3332365D
+                7D2C2274223A302C2273223A5B305D7D2C7B2274223A36302C2273223A5B3138
+                335D7D5D2C226978223A31307D2C2270223A7B2261223A302C226B223A5B3130
+                302E30323036363636363636363636382C3130302E3030303030303030303030
+                3030332C305D2C226978223A327D2C2261223A7B2261223A302C226B223A5B2D
+                32322E3633372C31392E3330312C305D2C226978223A317D2C2273223A7B2261
+                223A302C226B223A5B33332E33333333333333333333333333342C33332E3333
+                3333333333333333333333342C3130305D2C226978223A367D7D2C22616F223A
+                302C22736861706573223A5B7B227479223A226772222C226974223A5B7B2264
+                223A312C227479223A22656C222C2273223A7B2261223A302C226B223A5B3336
+                382E3630322C3336382E3630325D2C226978223A327D2C2270223A7B2261223A
+                302C226B223A5B302C305D2C226978223A337D2C226E6D223A22456C6C697073
+                6520506174682031222C226D6E223A224144424520566563746F722053686170
+                65202D20456C6C69707365222C226864223A66616C73657D2C7B227479223A22
+                7374222C2263223A7B2261223A302C226B223A5B312C312C312C315D2C226978
+                223A337D2C226F223A7B2261223A302C226B223A3130302C226978223A347D2C
+                2277223A7B2261223A302C226B223A34392C226978223A357D2C226C63223A32
+                2C226C6A223A312C226D6C223A342C22626D223A302C226E6D223A225374726F
+                6B652031222C226D6E223A224144424520566563746F72204772617068696320
+                2D205374726F6B65222C226864223A66616C73657D2C7B227479223A22747222
+                2C2270223A7B2261223A302C226B223A5B2D32322E3639392C31392E3330315D
+                2C226978223A327D2C2261223A7B2261223A302C226B223A5B302C305D2C2269
+                78223A317D2C2273223A7B2261223A302C226B223A5B3130302C3130305D2C22
+                6978223A337D2C2272223A7B2261223A302C226B223A302C226978223A367D2C
+                226F223A7B2261223A302C226B223A3130302C226978223A377D2C22736B223A
+                7B2261223A302C226B223A302C226978223A347D2C227361223A7B2261223A30
+                2C226B223A302C226978223A357D2C226E6D223A225472616E73666F726D227D
+                5D2C226E6D223A22456C6C697073652031222C226E70223A332C22636978223A
+                322C22626D223A302C226978223A312C226D6E223A224144424520566563746F
+                722047726F7570222C226864223A66616C73657D2C7B227479223A22746D222C
+                2273223A7B2261223A312C226B223A5B7B2269223A7B2278223A5B302E343338
+                5D2C2279223A5B315D7D2C226F223A7B2278223A5B302E3537395D2C2279223A
+                5B305D7D2C2274223A33302C2273223A5B305D7D2C7B2274223A36302C227322
+                3A5B34395D7D5D2C226978223A317D2C2265223A7B2261223A312C226B223A5B
+                7B2269223A7B2278223A5B302E3530345D2C2279223A5B315D7D2C226F223A7B
+                2278223A5B302E3535395D2C2279223A5B305D7D2C2274223A302C2273223A5B
+                315D7D2C7B2274223A33302C2273223A5B35305D7D5D2C226978223A327D2C22
+                6F223A7B2261223A302C226B223A302C226978223A337D2C226D223A312C2269
+                78223A322C226E6D223A225472696D2050617468732031222C226D6E223A2241
+                44424520566563746F722046696C746572202D205472696D222C226864223A66
+                616C73657D5D2C226970223A302C226F70223A3330302C227374223A302C2262
+                6D223A307D2C7B22646464223A302C22696E64223A322C227479223A342C226E
+                6D223A225368617065204C617965722031222C227372223A312C226B73223A7B
+                226F223A7B2261223A302C226B223A31302C226978223A31317D2C2272223A7B
+                2261223A302C226B223A302C226978223A31307D2C2270223A7B2261223A302C
+                226B223A5B3130372E35363633333333333333333333392C39332E3536363333
+                3333333333333333382C305D2C226978223A327D2C2261223A7B2261223A302C
+                226B223A5B302C302C305D2C226978223A317D2C2273223A7B2261223A302C22
+                6B223A5B33332E33333333333333333333333333342C33332E33333333333333
+                333333333333342C3130305D2C226978223A367D7D2C22616F223A302C227368
+                61706573223A5B7B227479223A226772222C226974223A5B7B2264223A312C22
+                7479223A22656C222C2273223A7B2261223A302C226B223A5B3336382E363032
+                2C3336382E3630325D2C226978223A327D2C2270223A7B2261223A302C226B22
+                3A5B302C305D2C226978223A337D2C226E6D223A22456C6C6970736520506174
+                682031222C226D6E223A224144424520566563746F72205368617065202D2045
+                6C6C69707365222C226864223A66616C73657D2C7B227479223A227374222C22
+                63223A7B2261223A302C226B223A5B302E383534393031393630373834333133
+                372C302E383339323135363836323734353039382C302E383339323135363836
+                323734353039382C315D2C226978223A337D2C226F223A7B2261223A302C226B
+                223A3130302C226978223A347D2C2277223A7B2261223A302C226B223A34392C
+                226978223A357D2C226C63223A322C226C6A223A312C226D6C223A342C22626D
+                223A302C226E6D223A225374726F6B652031222C226D6E223A22414442452056
+                6563746F722047726170686963202D205374726F6B65222C226864223A66616C
+                73657D2C7B227479223A227472222C2270223A7B2261223A302C226B223A5B2D
+                32322E3639392C31392E3330315D2C226978223A327D2C2261223A7B2261223A
+                302C226B223A5B302C305D2C226978223A317D2C2273223A7B2261223A302C22
+                6B223A5B3130302C3130305D2C226978223A337D2C2272223A7B2261223A302C
+                226B223A302C226978223A367D2C226F223A7B2261223A302C226B223A313030
+                2C226978223A377D2C22736B223A7B2261223A302C226B223A302C226978223A
+                347D2C227361223A7B2261223A302C226B223A302C226978223A357D2C226E6D
+                223A225472616E73666F726D227D5D2C226E6D223A22456C6C69707365203122
+                2C226E70223A332C22636978223A322C22626D223A302C226978223A312C226D
+                6E223A224144424520566563746F722047726F7570222C226864223A66616C73
+                657D5D2C226970223A302C226F70223A3330302C227374223A302C22626D223A
+                307D5D2C226D61726B657273223A5B5D7D}
+            end
+          end
+        end
+      end
+      object lytError: TLayout
+        Align = Bottom
+        Position.Y = 167.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 53.000000000000000000
+        Size.PlatformDefault = False
+        Visible = False
+        TabOrder = 2
+        TabStop = False
+        object rectError: TRectangle
+          Align = Contents
+          Fill.Color = x50EA6D7E
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 380.000000000000000000
+          Size.Height = 43.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFFDD0D3C
+          XRadius = 4.000000000000000000
+          YRadius = 4.000000000000000000
+          object Glyph3: TGlyph
+            Margins.Left = 2.000000000000000000
+            Align = MostLeft
+            Position.X = 2.000000000000000000
+            Opacity = 0.800000011920929000
+            Size.Width = 20.000000000000000000
+            Size.Height = 43.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 8
+            Images = dmCommon.iconsSmall
+          end
+          object lblError: TSkLabel
+            Align = Client
+            Margins.Left = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Size.Width = 348.000000000000000000
+            Size.Height = 43.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family]
+            TextSettings.Font.Size = 12.000000000000000000
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Justify
+            Words = <
+              item
+              end>
+          end
+        end
+      end
+    end
+  end
+end
