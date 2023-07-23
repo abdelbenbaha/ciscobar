@@ -2,7 +2,7 @@
 Ciscobar is a user-friendly and efficient tool designed to streamline the process of searching for Cisco contacts by name or phone number.
 ### Features
  - Effortless Search: quickly and easily find contact information without any hassle or extra effort.
- - Swift Call : effortlessly initiate, and end a telephone call with the mere tap of a button. ![enter image description here](https://img.shields.io/badge/soon-silver)
+ - Swift Call: effortlessly initiate, and end a telephone call with the mere tap of a button. ![enter image description here](https://img.shields.io/badge/soon-silver)
  - Easy Access: simplified Connection to Cisco Unified Communications Manager services at the click of a button.
  - Secured Data: your data is protected using logon credentials, ensuring that only you can access it.
 ### Supported platforms
@@ -11,7 +11,7 @@ Ciscobar is a user-friendly and efficient tool designed to streamline the proces
 ![enter image description here](https://img.shields.io/static/v1?label=Linux&message=soon&color=silver&style=for-the-badge&logo=linux&logoColor=white)
 ### Get started
 To begin using Ciscobar, you need to provide three essential parameters either through the user interface or the command line
-#### #### Via User Interface:
+#### Via User Interface:
 
 ![ciscobar](https://github.com/abdelbenbaha/ciscobar/assets/45561892/e8213100-062b-469e-b123-e05bc784ff23)
 
