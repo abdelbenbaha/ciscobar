@@ -6,7 +6,7 @@
     <invalidCredentials>Le nom d'utilisateur ou le mot de passe que vous avez saisi est incorrect.Veuillez réessayer</invalidCredentials>
     <invalidCucm>L'URL de base que vous avez saisie ne correspond pas à l'URL de base de CUCM.Veuillez réessayer</invalidCucm>
     <checkNetwork>Vérifiez votre connexion réseau et réessayez</checkNetwork>
-    <searchPrompt>Recherchez un nom ou saisissez un numéro de téléphone</searchPrompt>
+    <searchPrompt>Recherchez un nom ou saisissez un numéro</searchPrompt>
 	<pressEsc>Appuyer sur esc pour masquer</pressEsc>
     <btnCancel>annuler</btnCancel>
     <btnSave>enregistrer</btnSave>

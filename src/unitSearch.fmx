@@ -19,7 +19,7 @@ object frmSearch: TfrmSearch
     Margins.Top = 1.000000000000000000
     Position.Y = 1.000000000000000000
     Size.Width = 320.000000000000000000
-    Size.Height = 48.000000000000000000
+    Size.Height = 46.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
     object rectSearch: TRectangle
@@ -27,7 +27,7 @@ object frmSearch: TfrmSearch
       Fill.Color = xFF24292E
       Opacity = 0.300000011920929000
       Size.Width = 320.000000000000000000
-      Size.Height = 48.000000000000000000
+      Size.Height = 46.000000000000000000
       Size.PlatformDefault = False
       Stroke.Kind = None
       XRadius = 4.000000000000000000
@@ -53,7 +53,7 @@ object frmSearch: TfrmSearch
       object imgSearch: TGlyph
         Align = MostLeft
         Size.Width = 32.000000000000000000
-        Size.Height = 48.000000000000000000
+        Size.Height = 46.000000000000000000
         Size.PlatformDefault = False
         ImageIndex = 0
         Images = dmCommon.iconsSmall
