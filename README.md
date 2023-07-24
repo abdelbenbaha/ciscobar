@@ -18,7 +18,7 @@ Ciscobar is a user-friendly and efficient tool designed to streamline the proces
 To begin using Ciscobar, you need to provide three essential parameters either through the user interface or the command line
 #### Via User Interface:
 
-![ciscobar](https://github.com/abdelbenbaha/ciscobar/assets/45561892/e8213100-062b-469e-b123-e05bc784ff23)
+![ciscobar](https://github.com/abdelbenbaha/ciscobar/assets/45561892/2b6d4bfd-da70-4263-be83-3fa3ad0a4cff)
 
 1.  **CUCM Base URL:** The base URL for connecting to the Cisco Unified Communications Manager (CUCM) should be provided in the following format: `https://{cucm_hostname}`.
     
