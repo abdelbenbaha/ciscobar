@@ -198,7 +198,7 @@ procedure TdmCommon.DataModuleCreate(Sender: TObject);
 var
 LocaleSvc: IFMXLocaleService;
 begin
-  applicationPath:=GetCurrentDir;
+  applicationPath:=extractfilepath(ParamStr(0));
   applicationData:=TPath.GetHomePath+Tpath.DirectorySeparatorChar+appName;
   if not TDirectory.Exists(applicationData) then
     TDirectory.CreateDirectory(applicationData);
