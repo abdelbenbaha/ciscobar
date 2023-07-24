@@ -13,7 +13,7 @@ Ciscobar is a user-friendly and efficient tool designed to streamline the proces
 - English
 - Spanish
 - French
-> Explore the src/locales directory to contribute to translations in your language or help correct any typos!
+> Explore the src/locales directory to contribute or help correct any typos!
 ### Get started
 To begin using Ciscobar, you need to provide three essential parameters either through the user interface or the command line
 #### Via User Interface:
