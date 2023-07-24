@@ -45,7 +45,6 @@ type
 
 var
   frmSearch: TfrmSearch;
-
 implementation
 
 {$R *.fmx}
@@ -334,7 +333,9 @@ end;
 procedure TfrmSearch.rectSearchMouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Single);
 begin
-StartWindowDrag;
+if Button=TMouseButton.mbLeft then
+StartWindowDrag
+
 end;
 
 procedure TfrmSearch.scrListCalcContentBounds(Sender: TObject;

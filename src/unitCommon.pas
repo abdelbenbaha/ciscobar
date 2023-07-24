@@ -370,6 +370,7 @@ procedure TdmCommon.loadStrings(const languageCode:string);
 begin
 if not assigned(applicationStrings) then
  applicationStrings:=TStringList.Create;
+ applicationStrings.Clear;
   with TXmlDocument.Create do
    try
    Load(applicationPath+Tpath.DirectorySeparatorChar+'locales'+Tpath.DirectorySeparatorChar+languageCode+'.xml');
