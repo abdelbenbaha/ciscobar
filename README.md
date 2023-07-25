@@ -1,8 +1,8 @@
 ## Ciscobar ![enter image description here](https://img.shields.io/static/v1?label=release&message=1.0&color=silver)
+Ciscobar is a user-friendly search bar designed to streamline the process of searching for Cisco contacts by name or phone number.
 
 https://github.com/abdelbenbaha/ciscobar/assets/45561892/f76b99d0-16ba-4bf5-9268-79b5610d0c29
 
-Ciscobar is a user-friendly search bar designed to streamline the process of searching for Cisco contacts by name or phone number.
 ### Features
  - Effortless Search: quickly and easily find contact information without any hassle or extra effort.
  - Swift Call: effortlessly initiate, and end a telephone call with the mere tap of a button. ![enter image description here](https://img.shields.io/badge/soon-silver)
