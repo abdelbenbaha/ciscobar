@@ -1,8 +1,6 @@
 ## Ciscobar ![enter image description here](https://img.shields.io/static/v1?label=release&message=1.0&color=silver)
 
-
-https://github.com/abdelbenbaha/ciscobar/assets/45561892/47fe64ba-ecba-4960-be40-1a5bdac8c6a9
-
+https://github.com/abdelbenbaha/ciscobar/assets/45561892/f76b99d0-16ba-4bf5-9268-79b5610d0c29
 
 Ciscobar is a user-friendly search bar designed to streamline the process of searching for Cisco contacts by name or phone number.
 ### Features
